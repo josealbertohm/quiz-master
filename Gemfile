@@ -47,7 +47,15 @@ group :development do
   gem 'spring'
 end
 
-
+# Windows case for TimeZone info
 platforms :mswin do
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 end
+
+# Puma application server
+gem 'puma'
+
+# activeadmin
+gem 'activeadmin', '~> 1.0.0.pre4'
+gem 'activeadmin_addons'
+gem 'haml-rails'
