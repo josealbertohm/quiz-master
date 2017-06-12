@@ -59,3 +59,4 @@ gem 'puma'
 gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'activeadmin_addons'
 gem 'haml-rails'
+gem "active_material", github: "vigetlabs/active_material"
