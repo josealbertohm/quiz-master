@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card white darken-1">
+        <div class="card-content black-text">
+          <div class="row">
+            <div class="col s12 m12">
+              <h3>Question <%= @current + 1 %> of <%= @total %></h3>
+              <h4><%= @question['content'] %></h4>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col s12 m12">
+              <%= form_tag({:controller => "quiz", :action => "validate"}) do %>
+                <div class="input-field col s12 m12">
+                  <input id="answer" name="answer" type="text" class="validate">
+                  <label for="answer">Your Answer</label>
+                </div>
+                
+                <%= submit_tag("Next Question", :class => "submit") %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<% content_for(:title) do %>
+  Question <%= @current + 1 %> of <%= @total %>
+<% end %>
+
+</div>

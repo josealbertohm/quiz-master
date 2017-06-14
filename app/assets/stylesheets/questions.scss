@@ -1,3 +1,28 @@
 // Place all the styles related to the Questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.content
+{
+    height:100%;
+    width: 100%;
+    max-width: 1024px;
+    background-color:#ffffff;
+    position:absolute;
+    margin: 0 auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+div.row 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+a:link, a:visited {
+    color: #ffffff;
+}
